@@ -1,0 +1,21 @@
+﻿<Window x:Class="CodeTronEditor.Presentation.Views.ShellWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ShellWindow" Height="300" Width="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+
+        <Image Grid.Column="0" Source="/Images/away.png" />
+
+        <GridSplitter HorizontalAlignment="Right" 
+                  VerticalAlignment="Stretch" 
+                  Grid.Column="1" ResizeBehavior="PreviousAndNext"
+                  Width="2" Background="Azure"/>
+
+        <Button Content="{Binding ShowPicture}" Grid.Column="2" Command="{Binding ShowCommand}"/>
+    </Grid>
+</Window>
