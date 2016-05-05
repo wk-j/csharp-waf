@@ -2,6 +2,8 @@
 
 เป็น​ MVVM Framewok คล้ายกับ Prism แต่เล็กและง่ายกว่า
 
+![](screen/shell-window.png)
+
 ## ติดตั้ง
 
 - `Install-Package waf`
